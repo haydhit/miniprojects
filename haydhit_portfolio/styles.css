@@ -1,0 +1,395 @@
+/* Adding smooth scroll function */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Main Page */
+body {
+    margin: 0%;
+}
+
+/* Main Name */
+header {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-weight: bolder;
+    font-size: 30px;
+    color:rgb(152, 126, 88);
+}
+
+/* Top left Header */
+.headerdiv {
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+/* Header */
+.headerdiv header {
+    margin-bottom: 10px;
+}
+
+/* p Element */
+.headerdiv p {
+    color: rgb(165, 134, 86);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-style: italic;
+}
+
+/* img Element */
+.headerdiv p img {
+    display: inline-block;
+}
+
+/* Background of Navigation Bar */
+#home {
+    background-color: rgb(248, 242, 235);
+    border: 2px solid rgb(200, 180, 150);
+    border-radius: 0px;
+    padding-top: 1cm;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Bar */
+.topdiv {
+    float: right;
+    padding-right: 10px;
+    margin-right: 160px;
+}
+
+/* Navigation Bar Buttons */
+.topmenu {
+    color: rgb(165, 134, 86);
+    margin: 10px;
+    font-size: 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-color: transparent;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: rgb(241, 225, 200);
+    box-shadow: 1px 1px 3px rgb(146, 134, 111);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Adds customisation when hovering over Nav Buttons */
+.topmenu:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+/* About Me Section */
+#aboutme {
+    display: flex;
+    align-items: flex-start;
+    gap: 5cm;
+}
+
+#aboutme img {
+    flex-shrink: 0;
+    margin-left: 5cm;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 5cm;
+    line-height: 1.6;   /* this adds some space between the lines of text */
+}
+
+.about-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(165, 134, 86);
+}
+
+.about-text p {
+    margin-top: 0;
+    font-size: 19px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Headings (Skills, Projects, Recommendations) */
+.headings {
+    font-size:40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(165, 134, 86);
+    margin-left: 1cm;
+}
+
+/* Home Button Icon */
+.homebutton {
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    right: 0;
+}
+
+.homebutton img {
+    width: 30px;
+}
+
+/* Skills Section Customisation */
+#skill-icons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+#skill-icons figure {
+    text-align: center;
+    width:200px;
+    background-color: rgb(248, 242, 235);
+    border-radius: 10px;
+    border: 2px solid rgb(244, 231, 213);
+    box-shadow: 1px 2px 6px rgb(200, 180, 150);
+    padding: 10px;
+}
+
+#skill-icons img {
+    height: 50px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+#skill-icons figcaption {
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#skill-icons p {
+    margin-top: 1cm;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color:rgb(122, 99, 64)
+}
+
+/* Projects Section Customisation */
+#projects-showcase {
+    margin-left: 2cm;
+}
+
+#projects-showcase p {
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(113, 91, 58);
+}
+
+#projects-showcase li {
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Recommendations Section Customisation */
+#recommendations-display {
+    margin-left: 2cm;
+    margin-right: 2cm;
+    margin-bottom: 3cm;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Responsive grid for smaller screens */
+@media (max-width: 1200px) {
+    #recommendations-display {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    #recommendations-display {
+        grid-template-columns: 1fr;
+    }
+}
+
+.recommendation-card {
+    background-color: rgb(248, 242, 235);
+    border: 2px solid rgb(200, 180, 150);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+}
+
+.recommendation-card .name {
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(152, 126, 88);
+    margin-bottom: 5px;
+}
+
+.recommendation-card .position {
+    font-style: italic;
+    color: rgb(120, 100, 70);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.recommendation-card .text {
+    color: rgb(80, 60, 40);
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+/* New recommendation highlight */
+.recommendation-card.new-recommendation {
+    border-color: rgb(152, 126, 88);
+    border-width: 3px;
+    animation: fadeInScale 0.5s ease-in-out;
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Recommendation Form Styling */
+.recommendation-form {
+    margin: 2cm;
+    background-color: rgb(248, 242, 235);
+    border: 2px solid rgb(200, 180, 150);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation-form h3 {
+    color: rgb(152, 126, 88);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: rgb(120, 100, 70);
+    margin-bottom: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgb(220, 200, 170);
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: rgb(152, 126, 88);
+    box-shadow: 0 0 5px rgba(152, 126, 88, 0.3);
+}
+
+.submit-btn {
+    background-color: rgb(152, 126, 88);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: rgb(130, 108, 76);
+}
+
+/* Pop-up Modal Styling */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: rgb(248, 242, 235);
+    border: 3px solid rgb(152, 126, 88);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 90%;
+}
+
+.modal-content h3 {
+    color: rgb(152, 126, 88);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.modal-content p {
+    color: rgb(80, 60, 40);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.modal-btn {
+    background-color: rgb(152, 126, 88);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

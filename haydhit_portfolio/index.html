@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset= "UTF-8">
+        <meta name= "viewport" content="width=device-width" initial-scale= "1.0">
+        <title>Haydhit Samsuri's Portfolio</title>
+        <link rel= "stylesheet" href = "styles.css">
+    </head>
+
+    <body>
+        <section id="home">
+            <!-- Navigation to different sections of the page -->
+            <nav>
+                <div class="topdiv">
+                    <a href="#aboutme"><button class="topmenu">About Me</button></a>
+                    <a href="#skills"><button class="topmenu">Skills</button></a>
+                    <a href="#projects"><button class="topmenu">Projects</button></a>
+                    <a href="#recommendations"><button class="topmenu">Recommendations</button></a>
+                </div>
+            </nav>
+    
+            <div class="headerdiv">
+                <header>Haydhit Samsuri</header>
+                <p><img src="html_images/email_image.png" width="20px">jdoe@jeemail.com</p>
+                <p><img src="html_images/phone_image.png" width="20px"> +1 234 567 890</p>
+            </div>
+        </section>
+    
+        <!-- Main Image Icon & About Me -->
+        <section id="aboutme">
+            <img src="html_images/profile_image.png" width="350px" alt="cute_cat_png">
+    
+            <div class="about-text">
+                <h1>Hi, I'm Haydhit Samsuri! 👋</h1>
+                <p>
+                    I am a <b>Web Developer</b> with <u>3 years of experience</u> in both frontend and backend development.
+                    I have worked in various companies such as Google and Amazon. I have also worked on big projects such as integrating OpenAI
+                    into companies. On a side note, I love cats and taking pictures!
+                </p>
+            </div>
+        </section>
+    
+        <!-- Horizontal Line for neater layout -->
+        <hr style="border: none; border-radius:3px; border-top: 3px solid lightgrey; width: 90%; margin: 20px auto;">
+    
+        <!-- Skills Section -->
+        <section id="skills">
+            <div id="skills-section">
+                <h2 class="headings">Skills</h2>
+    
+                <div id="skill-icons">
+                    <figure>
+                         <img src="html_images/html.png">
+                        <figcaption>HTML</figcaption>
+                        <p>2 Years of Experience</p>
+                    </figure>
+    
+                    <figure>
+                         <img src="html_images/css.png">
+                        <figcaption>CSS</figcaption>
+                        <p>2 Years of Experience</p>
+                    </figure>
+    
+                    <figure>
+                         <img src="html_images/javascript.png">
+                        <figcaption>JavaScript</figcaption>
+                        <p>1.5 Years of Experience</p>
+                    </figure>
+    
+                    <figure>
+                         <img src="html_images/react.png">
+                        <figcaption>React</figcaption>
+                        <p>6 Months of Experience</p>
+                    </figure>
+    
+                    <figure>
+                         <img src="html_images/nodejs.png">
+                        <figcaption>nodeJS</figcaption>
+                        <p>1 Year of Experience</p>
+                    </figure>
+    
+                    <figure>
+                         <img src="html_images/python.png">
+                        <figcaption>Python</figcaption>
+                        <p>1 Year of Experience</p>
+                    </figure>
+    
+                    <figure>
+                         <img src="html_images/java.png">
+                        <figcaption>Java</figcaption>
+                        <p>6 Months of Experience</p>
+                    </figure>
+    
+                    <figure>
+                         <img src="html_images/c.png">
+                        <figcaption>C++</figcaption>
+                        <p>3 Months of Experience</p>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Projects Section -->
+        <section id="projects">
+            <div id="projects-section">
+                <h3 class="headings">Projects</h3>
+    
+                <div id="projects-showcase">     
+                    <div id="proj1">
+                        <p>Unit Conversion Website</p>
+                        <ul>
+                            <li>Developed a website that helps to solve small everyday calculations such as Temperature, Weight & Distance units.</li>
+                        </ul>
+                        <hr style="border: none; border-radius:5px; border-top: 2px solid lightgrey; width: 80%; margin: 20px auto;">
+                    </div>
+    
+                    <div id="proj2">
+                        <p>Simple Interest Calculator</p>
+                        <ul>
+                            <li>Developed a website with the functionality of an interest calculator that helps to calculate money earned through interest.</li>
+                        </ul>
+                        <hr style="border: none; border-radius:5px; border-top: 2px solid lightgrey; width: 80%; margin: 20px auto;">
+                    </div>
+    
+                    <div id="proj3">
+                        <p>Portfolio Website</p>
+                        <ul>
+                            <li>Created a website for a company's employee, providing a timeless portfolio style & catering to their needs.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Recommendations Section-->
+        <section id="recommendations">
+            <div id="recommendations-section">
+                <h4 class="headings">Recommendations</h4>
+                
+                <div id="recommendations-display">
+                    <!-- Initial recommendations will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+    
+        <!-- Input box for recommendations -->
+        <section class="recommendation-form">
+            <h3>Leave a Recommendation!</h3>
+            <form id="recommendationForm">
+
+                <div class="form-group">
+                    <label for="recommenderName">Your Name:</label>
+                    <input type="text" id="recommenderName" name="recommenderName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="recommenderPosition">Your Position/Company:</label>
+                    <input type="text" id="recommenderPosition" name="recommenderPosition" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="recommendationText">Your Recommendation:</label>
+                    <textarea id="recommendationText" name="recommendationText" placeholder="Share your experience..." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Recommendation</button>
+            </form>
+        </section>
+    
+        <!-- Success Modal -->
+        <div id="successModal" class="modal-overlay">
+
+            <div class="modal-content">
+                <h3>🎉 Success!</h3>
+                <p>Your recommendation has been added successfully!</p>
+                <button onclick="closeModal()" class="modal-btn">Close</button>
+            </div>
+
+        </div>
+    
+        <!-- Home Button -->
+        <div id="gohome" class="homebutton">
+            <a href="#home">
+            <img src="html_images/home_image.png">
+            </a>
+        </div>
+    
+        <script>
+            // Store all recommendations (no limit, keeps growing)
+            let recommendations = [
+                {
+                    name: "Michael Chen",
+                    position: "Senior Software Engineer, IBM Cloud",
+                    text: "Jane consistently delivered high-quality code and showed exceptional problem-solving skills during our microservices project. Her expertise with IBM Watson services was instrumental in implementing our AI features. I highly recommend her for any full-stack development role."
+                },
+                {
+                    name: "Sarah Rodriguez",
+                    position: "Project Manager, TechStart Solutions", 
+                    text: "Working with Jane was an absolute pleasure. She has a keen eye for both frontend design and backend architecture. Her ability to translate complex requirements into elegant solutions makes her an invaluable team member. Jane's dedication and technical skills are truly outstanding."
+                },
+                {
+                    name: "David Kumar",
+                    position: "Lead Developer, WebFlow Innovations",
+                    text: "Jane's proficiency across multiple programming languages and her quick adaptation to new technologies impressed me greatly. She took initiative on challenging features and always delivered ahead of schedule. Her collaborative spirit and technical excellence make her a great asset to any development team."
+                }
+            ];
+    
+            // Function to create a recommendation card element
+            function createRecommendationCard(recommendation, isNew = false) {
+                const card = document.createElement('div');
+                card.className = `recommendation-card ${isNew ? 'new-recommendation' : ''}`;
+                
+                card.innerHTML = `
+                    <div class="name">${recommendation.name}</div>
+                    <div class="position">${recommendation.position}</div>
+                    <div class="text">${recommendation.text}</div>
+                `;
+                
+                return card;
+            }
+    
+            // Function to update the display
+            function updateRecommendationsDisplay() {
+                const displayContainer = document.getElementById('recommendations-display');
+                displayContainer.innerHTML = '';
+                
+                // Add all recommendations to the display
+                recommendations.forEach((recommendation, index) => {
+                    const isNew = index >= recommendations.length - 1 && recommendations.length > 3;
+                    const card = createRecommendationCard(recommendation, false);
+                    displayContainer.appendChild(card);
+                });
+            }
+    
+            // Function to add a new recommendation
+            function addNewRecommendation(name, position, text) {
+                const newRecommendation = {
+                    name: name,
+                    position: position,
+                    text: text
+                };
+                
+                // Add the new recommendation to the array
+                recommendations.push(newRecommendation);
+                
+                // Create and add the new card with animation
+                const displayContainer = document.getElementById('recommendations-display');
+                const newCard = createRecommendationCard(newRecommendation, true);
+                displayContainer.appendChild(newCard);
+                
+                // Remove the 'new-recommendation' class after animation completes
+                setTimeout(() => {
+                    newCard.classList.remove('new-recommendation');
+                }, 500);
+                
+                // Scroll to the new recommendation
+                newCard.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'nearest' 
+                });
+            }
+    
+            // Initialize the display on page load
+            document.addEventListener('DOMContentLoaded', function() {
+                updateRecommendationsDisplay();
+            });
+    
+            // Handle form submission
+            document.getElementById('recommendationForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('recommenderName').value;
+                const position = document.getElementById('recommenderPosition').value;
+                const text = document.getElementById('recommendationText').value;
+                
+                // Add the new recommendation
+                addNewRecommendation(name, position, text);
+                
+                // Show success modal
+                const modal = document.getElementById('successModal');
+                modal.style.display = 'flex';
+                
+                // Reset form
+                this.reset();
+            });
+    
+            // Function to close the modal
+            function closeModal() {
+                const modal = document.getElementById('successModal');
+                modal.style.display = 'none';
+            }
+    
+        </script>
+    </body>
+</html>
